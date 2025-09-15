@@ -1,4 +1,4 @@
-<mujoco model="nanosat">
+<mujoco model="nanosat_panda">
   <compiler angle="radian" meshdir="assets" autolimits="true" texturedir="assets"/>
 
   <option integrator="implicitfast" gravity="0 0 0"/>
