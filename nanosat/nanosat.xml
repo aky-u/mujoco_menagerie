@@ -84,8 +84,19 @@
       <geom mesh="Nanosat_13" class="collision"/>
       <geom mesh="Nanosat_14" class="collision"/>
       <geom mesh="Nanosat_15" class="collision"/>
+      <site name="thruster1" pos="0.04092 0.2961 0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster2" pos="-0.04092 0.2961 0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster3" pos="-0.04092 0.2961 -0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster4" pos="0.04092 0.2961 -0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
     </body>
   </worldbody>
+
+  <actuator>
+    <general name="thruster1" site="thruster1" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
+    <general name="thruster2" site="thruster2" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
+    <general name="thruster3" site="thruster3" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
+    <general name="thruster4" site="thruster4" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
+  </actuator>
 
   <keyframe>
     <key name="home" qpos="0 0 0 0 0 0 1"/>
