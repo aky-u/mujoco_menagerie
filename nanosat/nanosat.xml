@@ -6,10 +6,10 @@
   <default>
     <default class="nanosat">
       <material specular="0.5" shininess="0.25"/>
-      <default class="visual">
+    <default class="visual">
         <geom type="mesh" contype="0" conaffinity="0" group="2"/>
-      </default>
-      <default class="collision">
+    </default>
+    <default class="collision">
         <geom type="mesh" group="3"/>
       </default>
     </default>
@@ -19,11 +19,17 @@
     <material name="Aluminium" specular="0.5" shininess="0.542231445" rgba="0.523579 0.523579 0.523579 1.000000"/>
     <material name="AluminiumAnodised" specular="0.5" shininess="0.542231445" rgba="0.636359 0.479112 0.229033 1.000000"/>
     <material name="AluminiumBlack" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.001" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.002" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.003" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
     <material name="AluminiumWhite" specular="0.5" shininess="0.386613068" rgba="0.850000 0.850000 0.850000 1.000000"/>
     <material name="Foil.Gold_2" specular="0.5" shininess="0.793881104" rgba="0.665500 0.337149 0.010959 1.000000"/>
     <texture type="2d" name="Foil_Gold_Color" file="Foil_Gold_Color.png"/>
     <material name="Foil.Gold_3" texture="Foil_Gold_Color" specular="0.5" shininess="0.25"/>
     <material name="Metal_1" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.001" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.002" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.003" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
     <material name="PlasticWhite" specular="0.5" shininess="0.25" rgba="0.800000 0.800000 0.800000 1.000000"/>
     <texture type="2d" name="SolarCell.002_albedo" file="SolarCell.002_albedo.png"/>
     <material name="SolarCells_2" texture="SolarCell.002_albedo" specular="0.5" shininess="0.25"/>
@@ -35,36 +41,49 @@
     <mesh file="Nanosat_3.obj"/>
     <mesh file="Nanosat_4.obj"/>
     <mesh file="Nanosat_5.obj"/>
-    <mesh file="Nanosat_6.obj"/>
     <mesh file="Nanosat_7.obj"/>
     <mesh file="Nanosat_8.obj"/>
     <mesh file="Nanosat_9.obj"/>
+    <mesh file="Nanosat_10.obj"/>
+    <mesh file="Nanosat_11.obj"/>
+    <mesh file="Nanosat_12.obj"/>
+    <mesh file="Nanosat_13.obj"/>
+    <mesh file="Nanosat_14.obj"/>
+    <mesh file="Nanosat_15.obj"/>
   </asset>
-
   <worldbody>
-    <light name="top" pos="0 0 2" mode="trackcom"/>
     <body name="Nanosat" childclass="nanosat">
       <freejoint/>
-      <inertial mass="0.629769" pos="-0.041018 -0.00014 0.049974"
-        fullinertia="0.00315 0.00388 0.004285 8.2904e-7 0.00015 8.2299e-6"/>
-      <geom mesh="Nanosat_1" material="Foil.Gold_2" class="visual"/>
-      <geom mesh="Nanosat_2" material="SolarCells_2" class="visual"/>
-      <geom mesh="Nanosat_3" material="AluminiumBlack" class="visual"/>
-      <geom mesh="Nanosat_4" material="Metal_1" class="visual"/>
-      <geom mesh="Nanosat_5" material="Foil.Gold_3" class="visual"/>
-      <geom mesh="Nanosat_6" material="WhitePowderCoating" class="visual"/>
-      <geom mesh="Nanosat_7" material="AluminiumAnodised" class="visual"/>
-      <geom mesh="Nanosat_8" material="PlasticWhite" class="visual"/>
-      <geom mesh="Nanosat_9" material="Aluminium" class="visual"/>
+      <geom mesh="Nanosat_0" material="AluminiumBlack.003" class="visual"/>
+      <geom mesh="Nanosat_1" material="Metal_1.003" class="visual"/>
+      <geom mesh="Nanosat_2" material="AluminiumBlack.002" class="visual"/>
+      <geom mesh="Nanosat_3" material="Metal_1.002" class="visual"/>
+      <geom mesh="Nanosat_4" material="AluminiumBlack.001" class="visual"/>
+      <geom mesh="Nanosat_5" material="Metal_1.001" class="visual"/>
+      <geom mesh="Nanosat_7" material="Foil.Gold_2" class="visual"/>
+      <geom mesh="Nanosat_8" material="SolarCells_2" class="visual"/>
+      <geom mesh="Nanosat_9" material="AluminiumBlack" class="visual"/>
+      <geom mesh="Nanosat_10" material="Metal_1" class="visual"/>
+      <geom mesh="Nanosat_11" material="Foil.Gold_3" class="visual"/>
+      <geom mesh="Nanosat_12" material="WhitePowderCoating" class="visual"/>
+      <geom mesh="Nanosat_13" material="AluminiumAnodised" class="visual"/>
+      <geom mesh="Nanosat_14" material="PlasticWhite" class="visual"/>
+      <geom mesh="Nanosat_15" material="Aluminium" class="visual"/>
+      <geom mesh="Nanosat_0" class="collision"/>
       <geom mesh="Nanosat_1" class="collision"/>
       <geom mesh="Nanosat_2" class="collision"/>
       <geom mesh="Nanosat_3" class="collision"/>
       <geom mesh="Nanosat_4" class="collision"/>
       <geom mesh="Nanosat_5" class="collision"/>
-      <geom mesh="Nanosat_6" class="collision"/>
       <geom mesh="Nanosat_7" class="collision"/>
       <geom mesh="Nanosat_8" class="collision"/>
       <geom mesh="Nanosat_9" class="collision"/>
+      <geom mesh="Nanosat_10" class="collision"/>
+      <geom mesh="Nanosat_11" class="collision"/>
+      <geom mesh="Nanosat_12" class="collision"/>
+      <geom mesh="Nanosat_13" class="collision"/>
+      <geom mesh="Nanosat_14" class="collision"/>
+      <geom mesh="Nanosat_15" class="collision"/>
     </body>
   </worldbody>
 
