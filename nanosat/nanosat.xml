@@ -84,14 +84,29 @@
       <geom mesh="Nanosat_13" class="collision"/>
       <geom mesh="Nanosat_14" class="collision"/>
       <geom mesh="Nanosat_15" class="collision"/>
-      <site name="thruster1" pos="0.04092 0.2961 0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster2" pos="-0.04092 0.2961 0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster3" pos="-0.04092 0.2961 -0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster4" pos="0.04092 0.2961 -0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster1" pos="0.04092 0.3 0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster2" pos="-0.04092 0.3 0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster3" pos="-0.04092 0.3 -0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster4" pos="0.04092 0.3 -0.051802" size="0.01" rgba="1 0 0 0.5" type="sphere"/>
+      <body name="RW_roll" pos="0 0.08 0" quat="0 0 -0.7071 0.7071">
+        <joint name="rw_roll" type="hinge" axis="0 0 1" limited="false"/>
+        <geom type="cylinder" size="0.06 0.01" pos="0 0 0" rgba="0 1 0 0.3" class="visual"/>
+      </body>
+      <body name="RW_pitch" pos="-0.08 0.15 0" quat="0 -0.7071 0 0.7071">
+        <joint name="rw_pitch" type="hinge" axis="0 0 1" limited="false"/>
+        <geom type="cylinder" size="0.06 0.01" pos="0 0 0" rgba="0 1 0 0.3" class="visual"/>
+      </body>
+      <body name="RW_yaw" pos="0 0.15 0.08" quat="0 0 0 1">
+        <joint name="rw_yaw" type="hinge" axis="0 0 1" limited="false"/>
+        <geom type="cylinder" size="0.06 0.01" pos="0 0 0" rgba="0 1 0 0.3" class="visual"/>
+      </body>
     </body>
   </worldbody>
 
   <actuator>
+    <general name="RW_roll" joint="rw_roll" ctrllimited="true" ctrlrange="-0.5 0.5"/>
+    <general name="RW_pitch" joint="rw_pitch" ctrllimited="true" ctrlrange="-0.5 0.5"/>
+    <general name="RW_yaw" joint="rw_yaw" ctrllimited="true" ctrlrange="-0.5 0.5"/>
     <general name="thruster1" site="thruster1" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
     <general name="thruster2" site="thruster2" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
     <general name="thruster3" site="thruster3" class="nanosat" gear="0 -1 0" ctrllimited="true" ctrlrange="0 1"/>
@@ -99,6 +114,6 @@
   </actuator>
 
   <keyframe>
-    <key name="home" qpos="0 0 0 0 0 0 1"/>
+    <key name="home" qpos="0 0 0 0 0 0 1 0 0 0"/>
   </keyframe>
 </mujoco>
