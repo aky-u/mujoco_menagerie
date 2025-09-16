@@ -40,11 +40,17 @@
     <material name="Aluminium" specular="0.5" shininess="0.542231445" rgba="0.523579 0.523579 0.523579 1.000000"/>
     <material name="AluminiumAnodised" specular="0.5" shininess="0.542231445" rgba="0.636359 0.479112 0.229033 1.000000"/>
     <material name="AluminiumBlack" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.001" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.002" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.003" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
     <material name="AluminiumWhite" specular="0.5" shininess="0.386613068" rgba="0.850000 0.850000 0.850000 1.000000"/>
     <material name="Foil.Gold_2" specular="0.5" shininess="0.793881104" rgba="0.665500 0.337149 0.010959 1.000000"/>
     <texture type="2d" name="Foil_Gold_Color" file="Foil_Gold_Color.png"/>
     <material name="Foil.Gold_3" texture="Foil_Gold_Color" specular="0.5" shininess="0.25"/>
     <material name="Metal_1" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.001" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.002" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.003" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
     <material name="PlasticWhite" specular="0.5" shininess="0.25" rgba="0.800000 0.800000 0.800000 1.000000"/>
     <texture type="2d" name="SolarCell.002_albedo" file="SolarCell.002_albedo.png"/>
     <material name="SolarCells_2" texture="SolarCell.002_albedo" specular="0.5" shininess="0.25"/>
@@ -56,10 +62,15 @@
     <mesh file="Nanosat_3.obj" scale="2.5 2.5 2.5"/>
     <mesh file="Nanosat_4.obj" scale="2.5 2.5 2.5"/>
     <mesh file="Nanosat_5.obj" scale="2.5 2.5 2.5"/>
-    <mesh file="Nanosat_6.obj" scale="2.5 2.5 2.5"/>
     <mesh file="Nanosat_7.obj" scale="2.5 2.5 2.5"/>
     <mesh file="Nanosat_8.obj" scale="2.5 2.5 2.5"/>
     <mesh file="Nanosat_9.obj" scale="2.5 2.5 2.5"/>
+    <mesh file="Nanosat_10.obj" scale="2.5 2.5 2.5"/>
+    <mesh file="Nanosat_11.obj" scale="2.5 2.5 2.5"/>
+    <mesh file="Nanosat_12.obj" scale="2.5 2.5 2.5"/>
+    <mesh file="Nanosat_13.obj" scale="2.5 2.5 2.5"/>
+    <mesh file="Nanosat_14.obj" scale="2.5 2.5 2.5"/>
+    <mesh file="Nanosat_15.obj" scale="2.5 2.5 2.5"/>
 
 
     <material class="nanosat_panda" name="white" rgba="1 1 1 1"/>
@@ -143,27 +154,40 @@
   <worldbody>
     <body name="Nanosat" childclass="nanosat_panda">
       <freejoint/>
-      <inertial mass="0.629769" pos="-0.041018 -0.00014 0.049974"
-        fullinertia="0.00315 0.00388 0.004285 8.2904e-7 0.00015 8.2299e-6"/>
-      <geom mesh="Nanosat_1" material="Foil.Gold_2" class="visual"/>
-      <geom mesh="Nanosat_2" material="SolarCells_2" class="visual"/>
-      <geom mesh="Nanosat_3" material="AluminiumBlack" class="visual"/>
-      <geom mesh="Nanosat_4" material="Metal_1" class="visual"/>
-      <geom mesh="Nanosat_5" material="Foil.Gold_3" class="visual"/>
-      <geom mesh="Nanosat_6" material="WhitePowderCoating" class="visual"/>
-      <geom mesh="Nanosat_7" material="AluminiumAnodised" class="visual"/>
-      <geom mesh="Nanosat_8" material="PlasticWhite" class="visual"/>
-      <geom mesh="Nanosat_9" material="Aluminium" class="visual"/>
+      <geom mesh="Nanosat_0" material="AluminiumBlack.003" class="visual"/>
+      <geom mesh="Nanosat_1" material="Metal_1.003" class="visual"/>
+      <geom mesh="Nanosat_2" material="AluminiumBlack.002" class="visual"/>
+      <geom mesh="Nanosat_3" material="Metal_1.002" class="visual"/>
+      <geom mesh="Nanosat_4" material="AluminiumBlack.001" class="visual"/>
+      <geom mesh="Nanosat_5" material="Metal_1.001" class="visual"/>
+      <geom mesh="Nanosat_7" material="Foil.Gold_2" class="visual"/>
+      <geom mesh="Nanosat_8" material="SolarCells_2" class="visual"/>
+      <geom mesh="Nanosat_9" material="AluminiumBlack" class="visual"/>
+      <geom mesh="Nanosat_10" material="Metal_1" class="visual"/>
+      <geom mesh="Nanosat_11" material="Foil.Gold_3" class="visual"/>
+      <geom mesh="Nanosat_12" material="WhitePowderCoating" class="visual"/>
+      <geom mesh="Nanosat_13" material="AluminiumAnodised" class="visual"/>
+      <geom mesh="Nanosat_14" material="PlasticWhite" class="visual"/>
+      <geom mesh="Nanosat_15" material="Aluminium" class="visual"/>
+      <geom mesh="Nanosat_0" class="collision"/>
       <geom mesh="Nanosat_1" class="collision"/>
       <geom mesh="Nanosat_2" class="collision"/>
       <geom mesh="Nanosat_3" class="collision"/>
       <geom mesh="Nanosat_4" class="collision"/>
       <geom mesh="Nanosat_5" class="collision"/>
-      <geom mesh="Nanosat_6" class="collision"/>
       <geom mesh="Nanosat_7" class="collision"/>
       <geom mesh="Nanosat_8" class="collision"/>
       <geom mesh="Nanosat_9" class="collision"/>
-      <!-- <site name="thruster1" pos="0.04092 0.051802 0.2961"/> -->
+      <geom mesh="Nanosat_10" class="collision"/>
+      <geom mesh="Nanosat_11" class="collision"/>
+      <geom mesh="Nanosat_12" class="collision"/>
+      <geom mesh="Nanosat_13" class="collision"/>
+      <geom mesh="Nanosat_14" class="collision"/>
+      <geom mesh="Nanosat_15" class="collision"/>
+      <site name="thruster1" pos="0.1023 0.74025 0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster2" pos="-0.1023 0.74025 0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster3" pos="-0.1023 0.74025 -0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster4" pos="0.1023 0.74025 -0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
       <body name="link0" childclass="nanosat_panda" quat="0 0 -0.7071 0.7071" pos="0 0 0">
         <inertial mass="0.629769" pos="-0.041018 -0.00014 0.049974"
           fullinertia="0.00315 0.00388 0.004285 8.2904e-7 0.00015 8.2299e-6"/>
@@ -310,6 +334,11 @@
   </equality>
 
   <actuator>
+    <general class="nanosat_panda" name="thruster1" site="thruster1" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="nanosat_panda" name="thruster2" site="thruster2" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="nanosat_panda" name="thruster3" site="thruster3" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="nanosat_panda" name="thruster4" site="thruster4" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
+
     <general class="nanosat_panda" name="actuator1" joint="joint1" gainprm="4500" biasprm="0 -4500 -450"/>
     <general class="nanosat_panda" name="actuator2" joint="joint2" gainprm="4500" biasprm="0 -4500 -450"
       ctrlrange="-1.7628 1.7628"/>
@@ -326,7 +355,7 @@
   </actuator>
 
   <keyframe>
-    <key name="home" qpos="0 0 0 0 0 0 1 0 0 0 -1.57079 0 1.57079 -0.7853 0.04 0.04" ctrl="0 0 0 -1.57079 0 1.57079 -0.7853 255"/>
+    <key name="home" qpos="0 0 0 0 0 0 1 0 0 0 -1.57079 0 1.57079 -0.7853 0.04 0.04" ctrl="0 0 0 0 0 0 0 -1.57079 0 1.57079 -0.7853 255"/>
   </keyframe>
 
   <contact>
