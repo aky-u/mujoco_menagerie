@@ -187,12 +187,12 @@
       <geom mesh="Sat_14" class="collision"/>
       <geom mesh="Sat_15" class="collision"/>
       <!-- Main thrusters -->
-      <site name="thruster1" pos="0.1023 0.75 0.129505" quat="0.75 0.75 0 0" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
-      <site name="thruster2" pos="-0.1023 0.75 0.129505" quat="0.75 0.75 0 0" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
-      <site name="thruster3" pos="-0.1023 0.75 -0.129505" quat="0.75 0.75 0 0" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
-      <site name="thruster4" pos="0.1023 0.75 -0.129505" quat="0.75 0.75 0 0" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster1" pos="0.1023 0.75 0.129505" quat="0. 0. .7071 -.7071" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster2" pos="-0.1023 0.75 0.129505" quat="0. 0. .7071 -.7071" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster3" pos="-0.1023 0.75 -0.129505" quat="0. 0. .7071 -.7071" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster4" pos="0.1023 0.75 -0.129505" quat="0. 0. .7071 -.7071" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
       <!-- Sub thrusters -->
-      <site name="thruster5" pos="0.25 0.75 0.25" size="0.00625" quat="-.354 -.146 -.854 .354" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster5" pos="0.25 0.75 0.25" size="0.00625" quat="1 0 0 0" rgba="1 0 0 0.5" type="cylinder"/>
       <site name="thruster6" pos="-0.25 0.75 0.25" size="0.00625" quat="1 0 0 0" rgba="1 0 0 0.5" type="cylinder"/>
       <site name="thruster7" pos="-0.25 0.75 -0.25" size="0.00625" quat="1 0 0 0" rgba="1 0 0 0.5" type="cylinder"/>
       <site name="thruster8" pos="0.25 0.75 -0.25" size="0.00625" quat="1 0 0 0" rgba="1 0 0 0.5" type="cylinder"/>
