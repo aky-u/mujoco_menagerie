@@ -187,19 +187,19 @@
       <geom mesh="Sat_14" class="collision"/>
       <geom mesh="Sat_15" class="collision"/>
       <!-- Main thrusters -->
-      <site name="thruster1" pos="0.1023 0.75 0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster2" pos="-0.1023 0.75 0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster3" pos="-0.1023 0.75 -0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster4" pos="0.1023 0.75 -0.129505" size="0.025" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster1" pos="0.1023 0.75 0.129505" quat="0 0 -0.75 0.75" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster2" pos="-0.1023 0.75 0.129505" quat="0 0 -0.75 0.75" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster3" pos="-0.1023 0.75 -0.129505" quat="0 0 -0.75 0.75" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster4" pos="0.1023 0.75 -0.129505" quat="0 0 -0.75 0.75" size="0.025" rgba="1 0 0 0.5" type="cylinder"/>
       <!-- Sub thrusters -->
-      <site name="thruster5" pos="0.25 0.75 0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster6" pos="-0.25 0.75 0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster7" pos="-0.25 0.75 -0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster8" pos="0.25 0.75 -0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster9" pos="0.25 0.0 0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster10" pos="-0.25 0.0 0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster11" pos="-0.25 0.0 -0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
-      <site name="thruster12" pos="0.25 0.0 -0.25" size="0.00625" rgba="1 0 0 0.5" type="sphere"/>
+      <site name="thruster5" pos="0.25 0.75 0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster6" pos="-0.25 0.75 0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster7" pos="-0.25 0.75 -0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster8" pos="0.25 0.75 -0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster9" pos="0.25 0.0 0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster10" pos="-0.25 0.0 0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster11" pos="-0.25 0.0 -0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
+      <site name="thruster12" pos="0.25 0.0 -0.25" size="0.00625" rgba="1 0 0 0.5" type="cylinder"/>
 
       <body name="RW_roll" pos="0 0.2 0" quat="0 0 -0.7071 0.7071">
         <joint name="rw_roll" type="hinge" axis="0 0 1" limited="false" damping="0" frictionloss="0.5"/>
@@ -362,18 +362,18 @@
     <general name="RW_roll" joint="rw_roll" ctrllimited="true" ctrlrange="-50 50"/>
     <general name="RW_pitch" joint="rw_pitch" ctrllimited="true" ctrlrange="-50 50"/>
     <general name="RW_yaw" joint="rw_yaw" ctrllimited="true" ctrlrange="-50 50"/>
-    <general class="sat_dual_arm" name="thruster1" site="thruster1" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
-    <general class="sat_dual_arm" name="thruster2" site="thruster2" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
-    <general class="sat_dual_arm" name="thruster3" site="thruster3" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
-    <general class="sat_dual_arm" name="thruster4" site="thruster4" gear="0 -1 0" ctrllimited="true" ctrlrange="0 10"/>
-    <general class="sat_dual_arm" name="thruster5" site="thruster5" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster6" site="thruster6" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster7" site="thruster7" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster8" site="thruster8" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster9" site="thruster9" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster10" site="thruster10" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster11" site="thruster11" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
-    <general class="sat_dual_arm" name="thruster12" site="thruster12" gear="0 0 1" ctrllimited="true" ctrlrange="0 1"/>
+    <general class="sat_dual_arm" name="thruster1" site="thruster1" gear="0 0 1" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="sat_dual_arm" name="thruster2" site="thruster2" gear="0 0 1" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="sat_dual_arm" name="thruster3" site="thruster3" gear="0 0 1" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="sat_dual_arm" name="thruster4" site="thruster4" gear="0 0 1" ctrllimited="true" ctrlrange="0 10"/>
+    <general class="sat_dual_arm" name="thruster5" site="thruster5" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster6" site="thruster6" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster7" site="thruster7" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster8" site="thruster8" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster9" site="thruster9" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster10" site="thruster10" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster11" site="thruster11" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
+    <general class="sat_dual_arm" name="thruster12" site="thruster12" gear="0 0 1" ctrllimited="true" ctrlrange="0 2"/>
 
     <general class="sat_dual_arm" name="actuator1" joint="joint1" gainprm="4500" biasprm="0 -4500 -450"/>
     <general class="sat_dual_arm" name="actuator2" joint="joint2" gainprm="4500" biasprm="0 -4500 -450"
