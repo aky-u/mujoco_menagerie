@@ -1,0 +1,83 @@
+<mujoco model="Sat">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <material name="Aluminium" specular="0.5" shininess="0.542231445" rgba="0.523579 0.523579 0.523579 1.000000"/>
+    <material name="AluminiumAnodised" specular="0.5" shininess="0.542231445" rgba="0.636359 0.479112 0.229033 1.000000"/>
+    <material name="AluminiumBlack" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.001" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.002" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumBlack.003" specular="0.5" shininess="0.542231445" rgba="0.086906 0.086906 0.086906 1.000000"/>
+    <material name="AluminiumWhite" specular="0.5" shininess="0.386613068" rgba="0.850000 0.850000 0.850000 1.000000"/>
+    <material name="Foil.Gold_2" specular="0.5" shininess="0.793881104" rgba="0.665500 0.337149 0.010959 1.000000"/>
+    <texture type="2d" name="Foil_Gold_Color" file="Foil_Gold_Color.png"/>
+    <material name="Foil.Gold_3" texture="Foil_Gold_Color" specular="0.5" shininess="0.25"/>
+    <material name="Metal_1" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.001" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.002" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="Metal_1.003" specular="0.5" shininess="0.49" rgba="0.642848 0.642848 0.642848 1.000000"/>
+    <material name="PlasticWhite" specular="0.5" shininess="0.25" rgba="0.800000 0.800000 0.800000 1.000000"/>
+    <texture type="2d" name="SolarCell.002_albedo" file="SolarCell.002_albedo.png"/>
+    <material name="SolarCells_2" texture="SolarCell.002_albedo" specular="0.5" shininess="0.25"/>
+    <texture type="2d" name="WPC_Diffuse" file="WPC_Diffuse.png"/>
+    <material name="WhitePowderCoating" texture="WPC_Diffuse" specular="0.5" shininess="0.25"/>
+    <mesh file="Sat_0.obj"/>
+    <mesh file="Sat_1.obj"/>
+    <mesh file="Sat_2.obj"/>
+    <mesh file="Sat_3.obj"/>
+    <mesh file="Sat_4.obj"/>
+    <mesh file="Sat_5.obj"/>
+    <!-- <mesh file="Sat_6.obj"/> -->
+    <mesh file="Sat_7.obj"/>
+    <mesh file="Sat_8.obj"/>
+    <mesh file="Sat_9.obj"/>
+    <mesh file="Sat_10.obj"/>
+    <mesh file="Sat_11.obj"/>
+    <mesh file="Sat_12.obj"/>
+    <mesh file="Sat_13.obj"/>
+    <mesh file="Sat_14.obj"/>
+    <mesh file="Sat_15.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Sat">
+      <geom mesh="Sat_0" material="AluminiumBlack.003" class="visual"/>
+      <geom mesh="Sat_1" material="Metal_1.003" class="visual"/>
+      <geom mesh="Sat_2" material="AluminiumBlack.002" class="visual"/>
+      <geom mesh="Sat_3" material="Metal_1.002" class="visual"/>
+      <geom mesh="Sat_4" material="AluminiumBlack.001" class="visual"/>
+      <geom mesh="Sat_5" material="Metal_1.001" class="visual"/>
+      <!-- <geom mesh="Sat_6" material="AluminiumWhite" class="visual"/> -->
+      <geom mesh="Sat_7" material="Foil.Gold_2" class="visual"/>
+      <geom mesh="Sat_8" material="SolarCells_2" class="visual"/>
+      <geom mesh="Sat_9" material="AluminiumBlack" class="visual"/>
+      <geom mesh="Sat_10" material="Metal_1" class="visual"/>
+      <geom mesh="Sat_11" material="Foil.Gold_3" class="visual"/>
+      <geom mesh="Sat_12" material="WhitePowderCoating" class="visual"/>
+      <geom mesh="Sat_13" material="AluminiumAnodised" class="visual"/>
+      <geom mesh="Sat_14" material="PlasticWhite" class="visual"/>
+      <geom mesh="Sat_15" material="Aluminium" class="visual"/>
+      <geom mesh="Sat_0" class="collision"/>
+      <geom mesh="Sat_1" class="collision"/>
+      <geom mesh="Sat_2" class="collision"/>
+      <geom mesh="Sat_3" class="collision"/>
+      <geom mesh="Sat_4" class="collision"/>
+      <geom mesh="Sat_5" class="collision"/>
+      <!-- <geom mesh="Sat_6" class="collision"/> -->
+      <geom mesh="Sat_7" class="collision"/>
+      <geom mesh="Sat_8" class="collision"/>
+      <geom mesh="Sat_9" class="collision"/>
+      <geom mesh="Sat_10" class="collision"/>
+      <geom mesh="Sat_11" class="collision"/>
+      <geom mesh="Sat_12" class="collision"/>
+      <geom mesh="Sat_13" class="collision"/>
+      <geom mesh="Sat_14" class="collision"/>
+      <geom mesh="Sat_15" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>
