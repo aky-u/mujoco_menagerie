@@ -139,7 +139,7 @@
                 <geom class="visual" pos="0 0 0" quat="0.707107 0 0 -0.707107" material="mat_0" mesh="SimpleRodEndEffector_1" />
                 <geom class="collision" pos="0 0 0" quat="0.707107 0 0 -0.707107" mesh="SimpleRodEndEffector_0" />
                 <geom class="collision" pos="0 0 0" quat="0.707107 0 0 -0.707107" mesh="SimpleRodEndEffector_1" />
-                <site name="eeff" pos="0 0 0"/>
+                <!-- <site name="eeff" pos="0 0 0"/> -->
               </body>
             </body>
           </body>
@@ -147,13 +147,34 @@
       </body>
     </body>
 
+    <body name="eeff" pos="2 0 1.5" gravcomp="1">
+      <site name="eeff" pos="0 0 0"/>
+
+      <joint name="eeff_x" type="slide" axis="1 0 0"/>
+      <joint name="eeff_y" type="slide" axis="0 1 0"/>
+      <joint name="eeff_z" type="slide" axis="0 0 1"/>
+
+      <geom
+          name="eeff_contact"
+          type="sphere"
+          size="0.05"
+          mass="0.01"
+          rgba="1 0 0 0.5"
+          contype="1"
+          conaffinity="1"/>
+
+    </body>
+
     <light name="overview_light" pos="0 -3 5" diffuse="1 1 1" dir="0 1 -1" specular="0.3 0.3 0.3" />
     <camera name="overview" pos="3 -4 3" xyaxes="1 0.75 0 -0.45 0.6 0.66" />
     <geom name="floor" type="plane" pos="0 0 0" size="5 5 0.1" rgba="0.8 0.8 0.8 1" />
   </worldbody>
 
-  <!-- <actuator>
-    <position name="ur_main_shoulder_pan_joint_pos"
+  <actuator>
+    <motor joint="eeff_x" gear="1" ctrllimited="true" ctrlrange="-1 1"/>
+    <motor joint="eeff_y" gear="1" ctrllimited="true" ctrlrange="-1 1"/>
+    <motor joint="eeff_z" gear="1" ctrllimited="true" ctrlrange="-1 1"/>
+    <!-- <position name="ur_main_shoulder_pan_joint_pos"
               joint="ur_main/shoulder_pan_joint"
               kp="500"
               ctrllimited="true"
@@ -199,6 +220,6 @@
               ctrllimited="true"
               ctrlrange="-6.28319 6.28319"
               forcelimited="true"
-              forcerange="-70 70" />
-  </actuator> -->
+              forcerange="-70 70" /> -->
+  </actuator>
 </mujoco>
