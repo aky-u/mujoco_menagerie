@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="meios">
+  <compiler angle="radian" />
+
+  <default>
+    <default class="visual">
+      <geom type="mesh" group="2" contype="0" conaffinity="0" />
+    </default>
+    <default class="collision">
+      <geom type="mesh" group="3" />
+    </default>
+  </default>
+
+  <asset>
+    <mesh name="UR8LongWorkbench_0" file="assets/UR8LongWorkbench_0.obj" content_type="model/obj" />
+    <mesh name="UR8LongWorkbench_1" file="assets/UR8LongWorkbench_1.obj" content_type="model/obj" />
+    <mesh name="UR8LongWorkbench_2" file="assets/UR8LongWorkbench_2.obj" content_type="model/obj" />
+    <mesh name="UR8LongWorkbench_3" file="assets/UR8LongWorkbench_3.obj" content_type="model/obj" />
+    <mesh name="GraniteTable_0" file="assets/GraniteTable_0.obj" content_type="model/obj" />
+    <mesh name="GraniteTable_1" file="assets/GraniteTable_1.obj" content_type="model/obj" />
+    <mesh name="GraniteTable_2" file="assets/GraniteTable_2.obj" content_type="model/obj" />
+    <mesh name="GraniteTable_3" file="assets/GraniteTable_3.obj" content_type="model/obj" />
+    <mesh name="base_0" file="assets/base_0.obj" content_type="model/obj" />
+    <mesh name="base_1" file="assets/base_1.obj" content_type="model/obj" />
+    <mesh name="base_2" file="assets/base_2.obj" content_type="model/obj" />
+    <mesh name="shoulder_0" file="assets/shoulder_0.obj" content_type="model/obj" />
+    <mesh name="shoulder_1" file="assets/shoulder_1.obj" content_type="model/obj" />
+    <mesh name="upperarm_0" file="assets/upperarm_0.obj" content_type="model/obj" />
+    <mesh name="upperarm_1" file="assets/upperarm_1.obj" content_type="model/obj" />
+    <mesh name="upperarm_2" file="assets/upperarm_2.obj" content_type="model/obj" />
+    <mesh name="upperarm_3" file="assets/upperarm_3.obj" content_type="model/obj" />
+    <mesh name="forearm_0" file="assets/forearm_0.obj" content_type="model/obj" />
+    <mesh name="forearm_1" file="assets/forearm_1.obj" content_type="model/obj" />
+    <mesh name="forearm_2" file="assets/forearm_2.obj" content_type="model/obj" />
+    <mesh name="forearm_3" file="assets/forearm_3.obj" content_type="model/obj" />
+    <mesh name="wrist1_0" file="assets/wrist1_0.obj" content_type="model/obj" />
+    <mesh name="wrist1_1" file="assets/wrist1_1.obj" content_type="model/obj" />
+    <mesh name="wrist1_2" file="assets/wrist1_2.obj" content_type="model/obj" />
+    <mesh name="wrist2_0" file="assets/wrist2_0.obj" content_type="model/obj" />
+    <mesh name="wrist2_1" file="assets/wrist2_1.obj" content_type="model/obj" />
+    <mesh name="wrist3" file="assets/wrist3.obj" content_type="model/obj" />
+    <mesh name="SimpleRodEndEffector_0" file="assets/SimpleRodEndEffector_0.obj" content_type="model/obj" />
+    <mesh name="SimpleRodEndEffector_1" file="assets/SimpleRodEndEffector_1.obj" content_type="model/obj" />
+    <material name="Material.002" rgba="0.4538652 0.4538652 0.4538652 1.0" shininess="0.01" specular="0.400000006" />
+    <material name="Material.005" rgba="0.0413336605 0.0413336605 0.0413336605 1.0" shininess="0.01" specular="0.400000006" />
+    <material name="mat_0" rgba="0.304448187 0.328116894 0.437909514 1.0" shininess="0.01" specular="0.400000006" />
+    <material name="mat_1" rgba="0.265210003 0.292892992 0.322058111 1.0" shininess="0.01" specular="0.400000006" />
+    <material name="Material.001" rgba="0.0271487199 0.0271487199 0.0271487199 1.0" shininess="0.01" specular="0.400000006" />
+    <material name="Material.003" rgba="0.0730518326 0.0555744693 0.0355741605 1.0" shininess="0.01" specular="0.400000006" />
+    <texture name="UR15_DIFF_8bit_2K" type="2d" file="assets/UR15_DIFF_8bit_2K.png" />
+    <material name="LED_001_COLOR_0" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+    <material name="Metal_Alu_Brushed_002_COLOR_0" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+    <material name="Rubber_Black_002_COLOR_0" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+    <material name="Metal_DarkGray_002_COLOR_0" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+    <texture name="UR8Long_DIFF_8bit_2K" type="2d" file="assets/UR8Long_DIFF_8bit_2K.png" />
+    <material name="Metal_Alu_Brushed.001" shininess="0.01" specular="0.400000006" texture="UR8Long_DIFF_8bit_2K" />
+    <material name="Metal_DarkGray.001" shininess="0.01" specular="0.400000006" texture="UR8Long_DIFF_8bit_2K" />
+    <material name="Plastic_Blue" shininess="0.01" specular="0.400000006" texture="UR8Long_DIFF_8bit_2K" />
+    <material name="Rubber_Black.001" shininess="0.01" specular="0.400000006" texture="UR8Long_DIFF_8bit_2K" />
+    <material name="Metal_DarkGray_003" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+    <material name="Plastic_Blue_001" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+    <material name="Rubber_Black_003" shininess="0.01" specular="0.400000006" texture="UR15_DIFF_8bit_2K" />
+  </asset>
+
+  <worldbody>
+    <geom class="visual" pos="0 0 0.74" quat="1 0 0 0" material="mat_1" mesh="UR8LongWorkbench_0" />
+    <geom class="visual" pos="0 0 0.74" quat="1 0 0 0" material="Material.002" mesh="UR8LongWorkbench_1" />
+    <geom class="visual" pos="0 0 0.74" quat="1 0 0 0" material="Material.005" mesh="UR8LongWorkbench_2" />
+    <geom class="visual" pos="0 0 0.74" quat="1 0 0 0" material="mat_0" mesh="UR8LongWorkbench_3" />
+    <geom class="collision" pos="0 0 0.74" quat="1 0 0 0" mesh="UR8LongWorkbench_0" />
+    <geom class="collision" pos="0 0 0.74" quat="1 0 0 0" mesh="UR8LongWorkbench_1" />
+    <geom class="collision" pos="0 0 0.74" quat="1 0 0 0" mesh="UR8LongWorkbench_2" />
+    <geom class="collision" pos="0 0 0.74" quat="1 0 0 0" mesh="UR8LongWorkbench_3" />
+    <geom class="visual" pos="0 0 0.74" quat="-1 0 0 0" material="LED_001_COLOR_0" mesh="base_0" />
+    <geom class="visual" pos="0 0 0.74" quat="-1 0 0 0" material="Rubber_Black_002_COLOR_0" mesh="base_1" />
+    <geom class="visual" pos="0 0 0.74" quat="-1 0 0 0" material="Metal_Alu_Brushed_002_COLOR_0" mesh="base_2" />
+    <geom class="collision" pos="0 0 0.74" quat="-1 0 0 0" mesh="base_0" />
+    <geom class="collision" pos="0 0 0.74" quat="-1 0 0 0" mesh="base_1" />
+    <geom class="collision" pos="0 0 0.74" quat="-1 0 0 0" mesh="base_2" />
+    <geom class="visual" pos="1.22 0 0" quat="1 0 0 0" material="Material.003" mesh="GraniteTable_0" />
+    <geom class="visual" pos="1.22 0 0" quat="1 0 0 0" material="mat_0" mesh="GraniteTable_1" />
+    <geom class="visual" pos="1.22 0 0" quat="1 0 0 0" material="Material.002" mesh="GraniteTable_2" />
+    <geom class="visual" pos="1.22 0 0" quat="1 0 0 0" material="Material.001" mesh="GraniteTable_3" />
+    <geom class="collision" pos="1.22 0 0" quat="1 0 0 0" mesh="GraniteTable_0" />
+    <geom class="collision" pos="1.22 0 0" quat="1 0 0 0" mesh="GraniteTable_1" />
+    <geom class="collision" pos="1.22 0 0" quat="1 0 0 0" mesh="GraniteTable_2" />
+    <geom class="collision" pos="1.22 0 0" quat="1 0 0 0" mesh="GraniteTable_3" friction="0 0 0" priority="2" />
+    <body name="ur_main/shoulder_link" pos="0 0 0.9586" quat="0 0 0 1">
+      <inertial pos="2.4e-05 -0.025304 -0.033309" quat="0.695667 0.163117 -0.158899 0.681316" diaginertia="0.0520589 0.0513337 0.0299064" mass="9.9883" />
+      <joint name="ur_main/shoulder_pan_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-433 433" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+      <geom class="visual" pos="0 0 0" quat="0 0 0 1" material="Rubber_Black_002_COLOR_0" mesh="shoulder_0" />
+      <geom class="visual" pos="0 0 0" quat="0 0 0 1" material="Metal_DarkGray_002_COLOR_0" mesh="shoulder_1" />
+      <geom class="collision" pos="0 0 0" quat="0 0 0 1" mesh="shoulder_0" />
+      <geom class="collision" pos="0 0 0" quat="0 0 0 1" mesh="shoulder_1" />
+      <body name="ur_main/upper_arm_link" quat="0.707107 0.707107 0 0">
+        <inertial pos="-0.333471 -7.4e-05 0.19542" quat="0.506621 0.493391 0.495006 0.504845" diaginertia="2.44012 2.43401 0.0554434" mass="17.0738" />
+        <joint name="ur_main/shoulder_lift_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-433 433" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+        <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Rubber_Black.001" mesh="upperarm_0" />
+        <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Metal_Alu_Brushed.001" mesh="upperarm_1" />
+        <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Metal_DarkGray.001" mesh="upperarm_2" />
+        <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Plastic_Blue" mesh="upperarm_3" />
+        <geom class="collision" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" mesh="upperarm_0" />
+        <geom class="collision" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" mesh="upperarm_1" />
+        <geom class="collision" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" mesh="upperarm_2" />
+        <geom class="collision" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" mesh="upperarm_3" />
+        <body name="ur_main/forearm_link" pos="-0.8989 0 0">
+          <inertial pos="-0.298798 5.8e-05 0.065663" quat="0.491605 0.508309 0.507913 0.491905" diaginertia="0.633274 0.626536 0.0215007" mass="7.6393" />
+          <joint name="ur_main/elbow_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-204 204" range="-3.14159 3.14159" damping="100" stiffness="0.1" />
+          <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Rubber_Black.001" mesh="forearm_0" />
+          <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Metal_Alu_Brushed.001" mesh="forearm_1" />
+          <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Metal_DarkGray.001" mesh="forearm_2" />
+          <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Plastic_Blue" mesh="forearm_3" />
+          <geom class="collision" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" mesh="forearm_0" />
+          <geom class="collision" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" mesh="forearm_1" />
+          <geom class="collision" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" mesh="forearm_2" />
+          <geom class="collision" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" mesh="forearm_3" />
+          <body name="ur_main/wrist_1_link" pos="-0.7149 0 0.1824">
+            <inertial pos="2.5e-05 -0.016413 -0.019695" quat="0.833332 0.5518 -0.0145415 0.0293715" diaginertia="0.00433968 0.00421107 0.00224825" mass="2.089" />
+            <joint name="ur_main/wrist_1_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+            <geom class="visual" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" material="Plastic_Blue_001" mesh="wrist1_0" />
+            <geom class="visual" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" material="Rubber_Black_003" mesh="wrist1_1" />
+            <geom class="visual" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" material="Metal_DarkGray_003" mesh="wrist1_2" />
+            <geom class="collision" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" mesh="wrist1_0" />
+            <geom class="collision" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" mesh="wrist1_1" />
+            <geom class="collision" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" mesh="wrist1_2" />
+            <body name="ur_main/wrist_2_link" pos="0 -0.1361 -2.79146e-11" quat="0.707107 0.707107 0 0">
+              <inertial pos="2.5e-05 0.015886 -0.01996" quat="0.548572 0.831821 0.0724532 -0.0435051" diaginertia="0.00428972 0.00423268 0.0022586" mass="2.0869" />
+              <joint name="ur_main/wrist_2_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+              <geom class="visual" pos="0 0 -0.064" quat="1 0 0 0" material="Rubber_Black_002_COLOR_0" mesh="wrist2_0" />
+              <geom class="visual" pos="0 0 -0.064" quat="1 0 0 0" material="Metal_DarkGray_002_COLOR_0" mesh="wrist2_1" />
+              <geom class="collision" pos="0 0 -0.064" quat="1 0 0 0" mesh="wrist2_0" />
+              <geom class="collision" pos="0 0 -0.064" quat="1 0 0 0" mesh="wrist2_1" />
+              <body name="ur_main/wrist_3_link" pos="0 0.1434 -2.94118e-11" quat="0.707107 -0.707107 0 0">
+                <inertial pos="-1.08771e-05 -6.66767e-05 0.00999254" quat="0.950776 -0.000991184 -0.000659664 -0.309877" diaginertia="0.0150691 0.0150627 0.00129956" mass="1.79162" />
+                <joint name="ur_main/wrist_3_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+                <geom class="visual" pos="0 0 -0.0715" quat="0.707107 0.707107 0 0" material="Metal_Alu_Brushed_002_COLOR_0" mesh="wrist3" />
+                <geom class="collision" pos="0 0 -0.0715" quat="0.707107 0.707107 0 0" mesh="wrist3" />
+                <geom class="visual" pos="0 0 0" quat="0.707107 0 0 -0.707107" material="Material.001" mesh="SimpleRodEndEffector_0" />
+                <geom class="visual" pos="0 0 0" quat="0.707107 0 0 -0.707107" material="mat_0" mesh="SimpleRodEndEffector_1" />
+                <geom class="collision" pos="0 0 0" quat="0.707107 0 0 -0.707107" mesh="SimpleRodEndEffector_0" />
+                <geom class="collision" pos="0 0 0" quat="0.707107 0 0 -0.707107" mesh="SimpleRodEndEffector_1" />
+                <site name="eeff" pos="0 0 0"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+
+    <light name="overview_light" pos="0 -3 5" diffuse="1 1 1" dir="0 1 -1" specular="0.3 0.3 0.3" />
+    <camera name="overview" pos="3 -4 3" xyaxes="1 0.75 0 -0.45 0.6 0.66" />
+    <geom name="floor" type="plane" pos="0 0 0" size="5 5 0.1" rgba="0.8 0.8 0.8 1" />
+  </worldbody>
+
+  <!-- <actuator>
+    <position name="ur_main_shoulder_pan_joint_pos"
+              joint="ur_main/shoulder_pan_joint"
+              kp="500"
+              ctrllimited="true"
+              ctrlrange="-6.28319 6.28319"
+              forcelimited="true"
+              forcerange="-433 433" />
+
+    <position name="ur_main_shoulder_lift_joint_pos"
+              joint="ur_main/shoulder_lift_joint"
+              kp="500"
+              ctrllimited="true"
+              ctrlrange="-6.28319 6.28319"
+              forcelimited="true"
+              forcerange="-433 433" />
+
+    <position name="ur_main_elbow_joint_pos"
+              joint="ur_main/elbow_joint"
+              kp="300"
+              ctrllimited="true"
+              ctrlrange="-3.14159 3.14159"
+              forcelimited="true"
+              forcerange="-204 204" />
+
+    <position name="ur_main_wrist_1_joint_pos"
+              joint="ur_main/wrist_1_joint"
+              kp="200"
+            ctrllimited="true"
+            ctrlrange="-6.28319 6.28319"
+            forcelimited="true"
+            forcerange="-70 70" />
+
+    <position name="ur_main_wrist_2_joint_pos"
+              joint="ur_main/wrist_2_joint"
+              kp="50"
+              ctrllimited="true"
+              ctrlrange="-6.28319 6.28319"
+              forcelimited="true"
+              forcerange="-70 70" />
+
+    <position name="ur_main_wrist_3_joint_pos"
+              joint="ur_main/wrist_3_joint"
+              kp="50"
+              ctrllimited="true"
+              ctrlrange="-6.28319 6.28319"
+              forcelimited="true"
+              forcerange="-70 70" />
+  </actuator> -->
+</mujoco>
