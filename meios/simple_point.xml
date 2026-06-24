@@ -94,7 +94,7 @@
       <geom class="collision" pos="0 0 0" quat="0 0 0 1" mesh="shoulder_1" />
       <body name="ur_main/upper_arm_link" quat="0.707107 0.707107 0 0">
         <inertial pos="-0.333471 -7.4e-05 0.19542" quat="0.506621 0.493391 0.495006 0.504845" diaginertia="2.44012 2.43401 0.0554434" mass="17.0738" />
-        <joint name="ur_main/shoulder_lift_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-433 433" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+        <joint name="ur_main/shoulder_lift_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-433 433" range="-1.1 -1.0" damping="100" stiffness="0.1" />
         <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Rubber_Black.001" mesh="upperarm_0" />
         <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Metal_Alu_Brushed.001" mesh="upperarm_1" />
         <geom class="visual" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" material="Metal_DarkGray.001" mesh="upperarm_2" />
@@ -105,7 +105,7 @@
         <geom class="collision" pos="0 0 0.109" quat="0.5 0.5 -0.5 -0.5" mesh="upperarm_3" />
         <body name="ur_main/forearm_link" pos="-0.8989 0 0">
           <inertial pos="-0.298798 5.8e-05 0.065663" quat="0.491605 0.508309 0.507913 0.491905" diaginertia="0.633274 0.626536 0.0215007" mass="7.6393" />
-          <joint name="ur_main/elbow_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-204 204" range="-3.14159 3.14159" damping="100" stiffness="0.1" />
+          <joint name="ur_main/elbow_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-204 204" range="0.8 0.81" damping="100" stiffness="0.1" />
           <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Rubber_Black.001" mesh="forearm_0" />
           <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Metal_Alu_Brushed.001" mesh="forearm_1" />
           <geom class="visual" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" material="Metal_DarkGray.001" mesh="forearm_2" />
@@ -116,7 +116,7 @@
           <geom class="collision" pos="0 0 0.134242" quat="0.5 0.5 -0.5 -0.5" mesh="forearm_3" />
           <body name="ur_main/wrist_1_link" pos="-0.7149 0 0.1824">
             <inertial pos="2.5e-05 -0.016413 -0.019695" quat="0.833332 0.5518 -0.0145415 0.0293715" diaginertia="0.00433968 0.00421107 0.00224825" mass="2.089" />
-            <joint name="ur_main/wrist_1_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+            <joint name="ur_main/wrist_1_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="1.0 1.1" damping="100" stiffness="0.1" />
             <geom class="visual" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" material="Plastic_Blue_001" mesh="wrist1_0" />
             <geom class="visual" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" material="Rubber_Black_003" mesh="wrist1_1" />
             <geom class="visual" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" material="Metal_DarkGray_003" mesh="wrist1_2" />
@@ -125,7 +125,7 @@
             <geom class="collision" pos="0 0 -0.0502" quat="0.707107 0.707107 0 0" mesh="wrist1_2" />
             <body name="ur_main/wrist_2_link" pos="0 -0.1361 -2.79146e-11" quat="0.707107 0.707107 0 0">
               <inertial pos="2.5e-05 0.015886 -0.01996" quat="0.548572 0.831821 0.0724532 -0.0435051" diaginertia="0.00428972 0.00423268 0.0022586" mass="2.0869" />
-              <joint name="ur_main/wrist_2_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="-6.28319 6.28319" damping="100" stiffness="0.1" />
+              <joint name="ur_main/wrist_2_joint" pos="0 0 0" axis="0 0 1" actuatorfrcrange="-70 70" range="1.57 1.58" damping="100" stiffness="0.1" />
               <geom class="visual" pos="0 0 -0.064" quat="1 0 0 0" material="Rubber_Black_002_COLOR_0" mesh="wrist2_0" />
               <geom class="visual" pos="0 0 -0.064" quat="1 0 0 0" material="Metal_DarkGray_002_COLOR_0" mesh="wrist2_1" />
               <geom class="collision" pos="0 0 -0.064" quat="1 0 0 0" mesh="wrist2_0" />
